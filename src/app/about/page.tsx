@@ -111,14 +111,16 @@ export default function AboutPage() {
               className="flex flex-wrap gap-4 mt-2"
               variants={itemVariants}
             >
-              <motion.button
-                className="flex items-center justify-center gap-2 rounded-lg h-12 px-6 bg-primary text-[#111618] text-base font-bold"
+              <motion.a
+                href="/TranMinhHung_FE_Resume.pdf"
+                download="TranMinhHung_FE_Resume.pdf"
+                className="flex items-center justify-center gap-2 rounded-lg h-12 px-6 bg-primary text-[#111618] text-base font-bold cursor-pointer"
                 whileHover={{ y: -2, scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
                 <Download className="size-5" />
                 <span>Download Resume</span>
-              </motion.button>
+              </motion.a>
 
               <div className="flex items-center gap-3 px-4">
                 <motion.a
